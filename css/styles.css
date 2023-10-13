@@ -1,0 +1,15 @@
+:root {
+    --color-dark: #1F2937;
+    --color-medium: #E5E7EB;
+    --color-light-bg: white;
+    --color-light-text: #F9FAF8;
+    --color-highlight: #3882F6;
+    
+    --text-hero-1st-size: 48px;
+    --text-hero-2nd-size: 18px;
+    --text-quote-size: 36px;
+    
+    --text-quote-style: italic;
+    --text-hero-style:bold;
+    --text-header-style: bold;
+}
