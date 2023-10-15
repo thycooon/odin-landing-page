@@ -31,6 +31,7 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 header {
@@ -40,6 +41,9 @@ header {
     padding:.7vw 0;
     background-color: var(--color-dark);
     user-select: none;
+    position: sticky;
+    top: 0;
+    
 }
 
 .header-logo {
@@ -144,9 +148,29 @@ section.showcase {
     border-radius: 10px;
     color: var(--color-light-text);
     background-color: var(--color-highlight);
-
     font-size: calc(18px * var(--font-size-factor));
     font-weight: bold;
+    transition: background-color, color 300ms;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    background-color: var(--color-light-text);
+    color: var(--color-highlight);
+    
+}
+
+section.customer-reviews {
+    height: 30vh;
+    background-color: var(--color-medium);
+}
+
+.reviews {
+    width: 60%;
+}
+
+.reviews .message {
+    font-size: calc(36px * 0.7 *var(--font-size-factor))
 }
 
 section.team {
@@ -195,11 +219,4 @@ section.team {
 .team-member .name,
 .team-member .position {
     height: 50%;
-}
-section.reviews {
-    height: 20vh;
-}
-
-.reviews .message {
-    font-size: calc(36px * var(--font-size-factor))
 }
