@@ -11,6 +11,11 @@ Fonts:
 https://fonts.google.com/specimen/Caveat  
 https://fonts.google.com/specimen/Comfortaa
 
+Icons:
+
+https://www.veryicon.com/icons/application/font-awesome/star-112.html
+https://www.veryicon.com/icons/application/font-awesome/star-half-6.html
+
 Photos:
 
 Szelei Robert: https://www.pexels.com/photo/sailboat-sailing-on-water-near-island-1482193/  
