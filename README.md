@@ -12,9 +12,9 @@ https://fonts.google.com/specimen/Comfortaa
 
 Photos:
 
-Szelei Robert: https://www.pexels.com/photo/sailboat-sailing-on-water-near-island-1482193/
-Mwabonje Ringa: https://www.pexels.com/photo/photo-of-woman-wearing-headscarf-1820575/
-Omer havivi: https://www.pexels.com/photo/man-in-sunglasses-and-turtleneck-17071640/
-ThisisEngineering RAEng: https://unsplash.com/photos/L8W4GD8qiAw
-Mungai Mutugi: https://www.pexels.com/photo/portrait-of-man-wearing-sunglasses-6342793/
-fauxels: https://www.pexels.com/photo/portrait-photo-of-man-standing-beside-plants-3228895/
+Szelei Robert: https://www.pexels.com/photo/sailboat-sailing-on-water-near-island-1482193/  
+Mwabonje Ringa: https://www.pexels.com/photo/photo-of-woman-wearing-headscarf-1820575/  
+Omer havivi: https://www.pexels.com/photo/man-in-sunglasses-and-turtleneck-17071640/  
+ThisisEngineering RAEng: https://unsplash.com/photos/L8W4GD8qiAw  
+Mungai Mutugi: https://www.pexels.com/photo/portrait-of-man-wearing-sunglasses-6342793/  
+fauxels: https://www.pexels.com/photo/portrait-photo-of-man-standing-beside-plants-3228895/  
