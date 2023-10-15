@@ -6,7 +6,8 @@ This project is part of "The Odin Project - Foundation" course and intends to di
 
 Ressources used:
 
-Fonts:
+Fonts:  
+
 https://fonts.google.com/specimen/Caveat  
 https://fonts.google.com/specimen/Comfortaa
 
