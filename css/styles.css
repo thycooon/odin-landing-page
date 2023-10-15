@@ -5,11 +5,10 @@
     --color-dark: #1F2937;
     --color-medium: #e5e7ebbe;
     --color-light-bg: white;
+    --color-dark-text: black;
     --color-light-text: #F9FAF8;
     --color-highlight: #3882F6;
     
-    
-    --text-hero-2nd-size: 18px;
     --text-quote-size: 36px;
     
     --text-quote-style: italic;
@@ -73,8 +72,23 @@ main {
     flex:1;
 }
 
-.showcase {
-    height: 40%;
+section:not(:first-of-type){
+    display: flex;
+    flex-direction: column;
+    height: 10%;
+}
+
+section .title {
+    width: 100%;
+    padding: 1vw;
+    text-align: center;
+    font-size: calc(36px * var(--font-size-factor));
+    font-weight: bold;
+    color: var(--color-dark-text);
+}
+
+section.showcase {
+    height: 40vh;
     background: var(--color-dark);
     display:flex;
     justify-content: center;
@@ -82,19 +96,19 @@ main {
 }
 
 .showcase .content {
-    max-width: 70%;
+    max-width: 60%;
     height: 80%;
     display: flex;
-    gap: 1vw;
+    gap: 5vw;
 
 }
 
 .showcase .left {
-    padding: 10px;
+    padding: 1vw;
     width: 60%;
     display: flex;
     flex-direction: column;
-    gap: 10%;
+    gap: 5%;
 }
 
 .showcase .right{
@@ -127,11 +141,65 @@ main {
     height: 15%;
     width: 25%;
     border: none;
-    border-radius: 15px;
+    border-radius: 10px;
     color: var(--color-light-text);
     background-color: var(--color-highlight);
 
     font-size: calc(18px * var(--font-size-factor));
     font-weight: bold;
+}
 
+section.team {
+    height:30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-members {
+    height:100%;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.team-member {
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.team-member .image {
+    height: 80%;
+    
+}
+
+.team-member > .image > img{
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+    border: 7px solid var(--color-highlight);
+    border-radius:10px;
+}
+
+.team-member .infos {
+    display: flex;
+    flex-direction: column;
+    height: 15%;
+    font-size: calc(18px * var(--font-size-factor))
+}
+
+.team-member .name,
+.team-member .position {
+    height: 50%;
+}
+section.reviews {
+    height: 20vh;
+}
+
+.reviews .message {
+    font-size: calc(36px * var(--font-size-factor))
 }
