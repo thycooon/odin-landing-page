@@ -80,6 +80,7 @@ section:not(:first-of-type){
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    padding: 2vh 0;
 }
 
 section > span.title {
@@ -87,7 +88,7 @@ section > span.title {
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: .4vw;
+    padding: .6vw;
     font-size: calc(36px * var(--font-size-factor));
     font-weight: bold;
     color: var(--color-dark-text);
@@ -158,6 +159,11 @@ section.showcase {
 .hero-btn:hover {
     background-color: var(--color-light-text);
     color: var(--color-highlight);
+    
+}
+
+section.services {
+    background-color: var(--color-medium);
     
 }
 
@@ -325,12 +331,19 @@ section.customer-reviews:hover .slider {
 
 
 section.team {
+    background-color: var(--color-dark);
+    color: var(--color-light-text);
     justify-content: center;
     align-items: center;
 }
 
+.team > .title {
+    color: var(--color-light-text);
+}
+
 .team-members {
     height:30vh;
+    padding: 1vh;
     width: 90%;
     display: flex;
     justify-content: space-around;
@@ -379,5 +392,4 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2vh;
 }
