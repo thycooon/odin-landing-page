@@ -3,12 +3,17 @@
 
 :root {
     --color-dark: #1F2937;
+    --color-dark: #0b2544;
+    --color-dark: #041d3b;
     --color-medium: #e5e7ebbe;
-    --color-light-bg: white;
+    --color-light-bg: rgba(255, 255, 255, 0.8);
+    --color-light-bg: rgba(226, 166, 152, 0.4);
     --color-dark-text: black;
     --color-light-text: #F9FAF8;
     --color-highlight: #3882F6;
     --color-highlight: #da8a83;
+    --color-title: #fdc448;
+    --color-highlight: #fdc448;
     
     --text-quote-size: 36px;
     
@@ -32,6 +37,8 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
+    background: url('../assets/img/sea_bg.jpg') no-repeat center center fixed;
+    background-size: cover;
 }
 
 header {
@@ -41,9 +48,8 @@ header {
     padding:.7vw 0;
     background-color: var(--color-dark);
     user-select: none;
-    position: sticky;
+    /* position: sticky; */
     top: 0;
-    
 }
 
 .header-logo {
@@ -85,13 +91,13 @@ section:not(:first-of-type){
 
 section > span.title {
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: 100%;
+    justify-content: left;
     padding: .6vw;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: calc(36px * var(--font-size-factor));
     font-weight: bold;
-    color: var(--color-dark-text);
+    color: var(--color-title);
 }
 
 section.showcase {
@@ -157,23 +163,65 @@ section.showcase {
 }
 
 .hero-btn:hover {
-    background-color: var(--color-light-text);
+    background-color: var(--color-medium);
     color: var(--color-highlight);
     
 }
 
 section.services {
+    background-color: var(--color-light-bg);
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-container {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 2vw;
+}
+
+.service {
+    width: 100%;
+    height: 100%;
     background-color: var(--color-medium);
-    
+    border-radius: 10px;
+}
+
+.service .image{
+    height: 100%;
+    width: 100%;                             
+}
+
+.service .image img {
+    object-fit: cover;
+    max-height: 100%;
+    max-width: 100%;
+    border: 5px solid var(--color-light-text);
+    border-radius: 10px;
+}
+
+.service .description {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1vw;
+}
+
+.service .description .name {
+    font-size: calc(18px * 1.2 * var(--font-size-factor));
+    font-weight: bold;
 }
 
 section.customer-reviews {
-    background-color: var(--color-medium);
+    background-color: var(--color-light-bg);
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    
     overflow: hidden;
 }
 
@@ -182,7 +230,8 @@ section.customer-reviews {
     height: 30vh;
     position: relative;
     overflow: hidden;
-    
+    border-radius: 10px;
+    background: var(--color-medium);
 }
 
 .reviews {
@@ -329,6 +378,22 @@ section.customer-reviews:hover .slider {
    
 }
 
+section.infos {
+    background-color: var(--color-dark);
+    color: var(--color-light-text);
+    align-items: center;
+    display: flex;
+}
+
+.infos > .container {
+   display: flex;
+   width: 90%;
+   height: 100%;
+   justify-content: center;
+   align-items: center;
+   gap: 4vw;
+
+}
 
 section.team {
     background-color: var(--color-dark);
@@ -346,7 +411,7 @@ section.team {
     padding: 1vh;
     width: 90%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -358,7 +423,7 @@ section.team {
 }
 
 .team-member .image {
-    height: 80%;
+    height: 75%;
     
 }
 
@@ -366,14 +431,14 @@ section.team {
     width: 100%;
     height: 100%; 
     object-fit: cover;
-    border: 7px solid var(--color-highlight);
+    border: 5px solid var(--color-highlight);
     border-radius:10px;
 }
 
 .team-member .infos {
     display: flex;
     flex-direction: column;
-    height: 15%;
+    height: 20%;
     font-size: calc(18px * var(--font-size-factor))
 }
 
@@ -382,6 +447,9 @@ section.team {
     height: 50%;
 }
 
+section.newsletter {
+    background-color: var(--color-light-bg);
+}
 
 footer {
     width: 100%;
