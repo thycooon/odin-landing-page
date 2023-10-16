@@ -31,7 +31,6 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    position: relative;
 }
 
 header {
@@ -79,13 +78,15 @@ main {
 section:not(:first-of-type){
     display: flex;
     flex-direction: column;
-    height: 10%;
+    flex-grow: 1;
 }
 
-section .title {
+section > span.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    padding: 1vw;
-    text-align: center;
+    padding: .4vw;
     font-size: calc(36px * var(--font-size-factor));
     font-weight: bold;
     color: var(--color-dark-text);
@@ -104,7 +105,6 @@ section.showcase {
     height: 80%;
     display: flex;
     gap: 5vw;
-
 }
 
 .showcase .left {
@@ -161,28 +161,174 @@ section.showcase {
 }
 
 section.customer-reviews {
-    height: 30vh;
     background-color: var(--color-medium);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 30vh;
+    overflow: hidden;
+}
+
+.review-container {
+    width: 45%;
+    height:70%;
+    position: relative;
+    overflow: hidden;
+    
 }
 
 .reviews {
-    width: 60%;
+    width: 400%;
+    height: 100%;
+    display:flex;
+    align-items: center;
+    
+    transition: margin 300ms;
 }
 
-.reviews .message {
-    font-size: calc(36px * 0.7 *var(--font-size-factor))
-}
-
-section.team {
-    height:30vh;
+.review {
+    width:100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
+    padding: 1vw;
+}
+
+.review > .rating {
+    width:100%;
+    height: 15%;
+    display: flex;
+    padding: 1vh;
+    gap: .8vw;
+}
+
+.rating > .svg-icon {
+    fill: var(--color-highlight); 
+    transform: scale(1.8);
+}
+
+.review > .message {
+    width:100%;
+    height: 75%;
+    display: flex;
+    align-items: center;
+    font-size: calc(36px * 0.6 *var(--font-size-factor));
+    line-height: calc(36px * var(--font-size-factor));
+    font-style: italic;
+}
+
+.review > .author {
+    width:100%;
+    height: 10%;
+    display: flex;
+    justify-content: right;
+    padding-right: 1vw;
+    font-size: calc(18px * 1.2 * var(--font-size-factor))
+}
+
+.slider {
+    position: absolute;
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.slider > label {
+    height: 1.2vw;
+    aspect-ratio: 1/1;
+    border: 3px solid var(--color-dark);
+    border-radius: 50%;
+    background-color: var(--color-medium);
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.slider > label:hover {
+    background-color: var(--color-light-bg);
+}
+
+@keyframes moveup {
+    0% {
+     transform: translateY(6vh);
+    } 
+    50% {
+     transform: translateY(2vh);
+    }
+    100% {
+     transform: translateY(-1vh);
+    }
+ }
+ 
+ @keyframes movedown {
+     0% {
+         transform: translateY(-1vh);
+        } 
+        50% {
+         transform: translateY(2vh);
+        }
+        100% {
+         transform: translateY(6vh);
+        }
+ }
+
+input[name="review-slider"] {
+    display: none;
+}
+
+#slide-1:checked ~ .reviews{
+    margin-left: -0%;
+}
+
+#slide-2:checked ~ .reviews{
+    margin-left: -100%;
+}
+
+#slide-3:checked ~ .reviews{
+    margin-left: -200%;
+}
+
+#slide-4:checked ~ .reviews{
+    margin-left: -300%;
+}
+
+#slide-1:checked ~ .slider > label:nth-of-type(1){
+    background-color: var(--color-highlight) !important;
+}
+
+#slide-2:checked ~ .slider > label:nth-of-type(2){
+    background-color: var(--color-highlight) !important;
+}
+
+#slide-3:checked ~ .slider > label:nth-of-type(3){
+    background-color: var(--color-highlight) !important;
+}
+
+#slide-4:checked ~ .slider > label:nth-of-type(4){
+    background-color: var(--color-highlight) !important;
+}
+
+section.customer-reviews:not(:hover) .slider{
+    animation: movedown 100ms ease-in forwards;
+}
+
+section.customer-reviews:hover .slider {
+    animation: moveup 100ms ease-in forwards;
+   
+}
+
+
+section.team {
     justify-content: center;
     align-items: center;
 }
 
 .team-members {
-    height:100%;
+    height:30vh;
     width: 90%;
     display: flex;
     justify-content: space-around;
