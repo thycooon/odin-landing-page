@@ -129,7 +129,7 @@ section > span.title {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: calc(36px * var(--font-size-factor));
     font-weight: bold;
-    color: var(--color-highlight);
+    color: var(--color-bg-pattern);
 }
 
 section.showcase {
@@ -426,10 +426,6 @@ section.team {
     color: var(--color-light-text);
     justify-content: center;
     align-items: center;
-}
-
-.team > .title {
-    color: var(--color-highlight);
 }
 
 .team-members {
