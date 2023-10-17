@@ -11,6 +11,7 @@
     --color-dark: #00333b;
     --color-highlight: #fdc448;
     /* --color-highlight: #986c0f; */
+    /* --color-highlight: rgba(152, 108, 15,.3); */
     --color-light-bg: rgba(226, 166, 152, 0.4);
 
     --font-size-factor: 1.3;
