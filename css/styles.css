@@ -10,7 +10,7 @@
 
     --color-dark: #00333b;
     --color-highlight: #fdc448;
-    /* --color-highlight: #986c0f; */
+    --color-bg-pattern: #986c0f;
     /* --color-highlight: rgba(152, 108, 15,.3); */
     --color-light-bg: rgba(226, 166, 152, 0.4);
 
@@ -25,11 +25,27 @@
      scroll-behavior: smooth;
 }
 
-.dark-bg {
+.dark-bg-pattern-1 {
     background-color: var(--color-dark);
-    background-image:  radial-gradient(#986c0f 0.45px, transparent 0.45px), radial-gradient(#986c0f 0.45px, #00333b 0.45px);
+    background-image:  radial-gradient(var(--color-bg-pattern) 0.45px, transparent 0.45px), radial-gradient(var(--color-bg-pattern) 0.45px, var(--color-dark) 0.45px);
     background-size: 18px 18px;
     background-position: 0 0,9px 9px;
+}
+
+.dark-bg-pattern-2 {
+    background-color: var(--color-dark);
+    /* background-size: 20px 20px; */
+    /* background-image:  repeating-linear-gradient(0deg, var(--color-bg-pattern), var(--color-bg-pattern) 1px, var(--color-dark) 1px, var(--color-dark)); */
+    background: radial-gradient(#986c0f 15%, transparent 16%), repeating-linear-gradient(0deg, transparent 6.5%, #00333b 7%, #00333b 9%, transparent 10%), linear-gradient(45deg, transparent 49%, #986c0f 49%, #986c0f 51%, transparent 51%), linear-gradient(-45deg, transparent 49%, #986c0f 49%, #986c0f 51%, transparent 51%);
+    background-size: 6em 6em;
+    background-color: #00333b;
+    opacity: 1
+
+}
+
+.dark-bg-pattern-2 > * {
+    background-image: none;
+    background-color: var(--color-dark);
 }
 
 img {
@@ -54,7 +70,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding:.7vw 0;
+    padding:.6vw 0;
     background-color: var(--color-dark);
     user-select: none;
     /* position: sticky; */
@@ -65,26 +81,32 @@ header {
     color: var(--color-light-text);
     font-size: calc(24px * 1.3 * var(--font-size-factor));
     font-weight: 700;
+    padding: .55vw;
+    border: 2px solid var(--color-bg-pattern);
+    border-radius: 10px;
 }
 
 header .menu {
     display: flex;
-    gap: 4vw;
+    align-items: center;
     list-style-type: none;
-    
+    border: 2px solid var(--color-bg-pattern);
+    border-radius: 10px;
 }
 
 .menu-link{
     font-size: calc(18px * 1.1 * var(--font-size-factor));
     color: var(--color-medium);
-    transition: color 300ms;
+    transition: background-color, color 300ms;
     cursor: pointer;   
-    padding: 12px; 
+    padding: .5vw 1.5vw; 
+    font-weight: 700;
 }
 
 .menu-link:hover{
     color: var(--color-light-text);
-    font-weight: 700;
+    background-color: var(--color-bg-pattern);
+    
 }
 
 main {
@@ -463,7 +485,7 @@ section.awards {
     justify-content: space-evenly;
     gap: 3vw;
     width: 90%;
-    height: 15vh;
+    height: 12vh;
 }
 
 .award {
