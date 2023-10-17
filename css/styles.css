@@ -71,8 +71,7 @@ header {
     padding:.6vw 0;
     background-color: var(--color-dark);
     user-select: none;
-    /* position: sticky; */
-    top: 0;
+    border-bottom: 4px solid var(--color-bg-pattern);
 }
 
 .header-logo {
@@ -102,9 +101,9 @@ header .menu {
 }
 
 .menu-link:hover{
-    color: var(--color-light-text);
-    background-color: var(--color-bg-pattern);
-    
+    color: var(--color-dark);
+    background-color: var(--color-highlight);
+    border-radius:10px;
 }
 
 main {
@@ -185,7 +184,7 @@ section.showcase {
     width: 25%;
     border: none;
     border-radius: 10px;
-    color: var(--color-light-text);
+    color: var(--color-dark);
     background-color: var(--color-highlight);
     font-size: calc(18px * var(--font-size-factor));
     font-weight: bold;
@@ -195,7 +194,7 @@ section.showcase {
 
 .hero-btn:hover {
     background-color: var(--color-bg-pattern);
-    color: var(--color-highlight);
+    color: var(--color-light-text);
     
 }
 
@@ -203,14 +202,15 @@ section.services {
     background-color: var(--color-light-bg);
     justify-content: center;
     align-items: center;
+    padding: 5vh 0;
 }
 
 .service-container {
-    width: 80%;
+    width: 90%;
     height: 100%;
     display: flex;
     justify-content: space-around;
-    gap: 2vw;
+    gap: 4vw;
 }
 
 .service {
@@ -500,11 +500,60 @@ section.awards {
 
 section.newsletter {
     height: 15vh;
+    align-items: center;
+    justify-content: center;
 }
 
-.newsletter.container {
-    
+.newsletter .container {
+    width: 50%;
+    height: 80%;
+    display: flex;
+    gap: 1vw;
+    background-color: var(--color-highlight) ;
+    border-radius: 10px;
+    padding: 1vw;
 }
+.newsletter .left {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: .8vh;
+}
+
+.newsletter .left .head{
+    font-weight: bold;
+    font-size: calc(20px * var(--font-size-factor));
+}
+
+.newsletter .left .title{
+    font-size: calc(18px * var(--font-size-factor));
+}
+
+.newsletter .right {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1vw;
+}
+
+.newsletter-btn {
+    padding: .8vw 2vw;
+    color: var(--color-light-text);
+    background-color: var(--color-bg-pattern);
+    border: none;
+    border-radius: 10px;
+    font-size: calc(16px * var(--font-size-factor));
+    font-weight: bold;
+    transition: 300ms;
+    cursor: pointer;
+}
+
+.newsletter-btn:hover{
+    background-color: var(--color-medium);
+    color: var(--color-dark);
+}
+
 
 footer {
     width: 100%;
@@ -515,4 +564,5 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-top: 4px solid var(--color-bg-pattern);
 }
