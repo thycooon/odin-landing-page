@@ -33,14 +33,12 @@
 }
 
 .dark-bg-pattern-2 {
-    background-color: var(--color-dark);
-    /* background-size: 20px 20px; */
-    /* background-image:  repeating-linear-gradient(0deg, var(--color-bg-pattern), var(--color-bg-pattern) 1px, var(--color-dark) 1px, var(--color-dark)); */
-    background: radial-gradient(#986c0f 15%, transparent 16%), repeating-linear-gradient(0deg, transparent 6.5%, #00333b 7%, #00333b 9%, transparent 10%), linear-gradient(45deg, transparent 49%, #986c0f 49%, #986c0f 51%, transparent 51%), linear-gradient(-45deg, transparent 49%, #986c0f 49%, #986c0f 51%, transparent 51%);
+    background: 
+    repeating-linear-gradient(0deg, transparent 6.5%, #00333b 7%, #00333b 9%, transparent 10%), 
+    linear-gradient(45deg, transparent 49%, #986c0f 49%, #986c0f 51%, transparent 51%), 
+    linear-gradient(-45deg, transparent 49%, #986c0f 49%, #986c0f 51%, transparent 51%);
     background-size: 6em 6em;
-    background-color: #00333b;
-    opacity: 1
-
+    background-color: var(--color-dark);
 }
 
 .dark-bg-pattern-2 > * {
@@ -196,7 +194,7 @@ section.showcase {
 }
 
 .hero-btn:hover {
-    background-color: var(--color-medium);
+    background-color: var(--color-bg-pattern);
     color: var(--color-highlight);
     
 }
@@ -250,6 +248,7 @@ section.customer-reviews {
     background-color: var(--color-light-bg);
     flex-direction: column;
     align-items: center;
+    padding: 8vh;
 }
 
 .review-container {
@@ -500,7 +499,11 @@ section.awards {
 }
 
 section.newsletter {
-    background-color: var(--color-light-bg);
+    height: 15vh;
+}
+
+.newsletter.container {
+    
 }
 
 footer {
