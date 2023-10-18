@@ -50,7 +50,6 @@ html::-webkit-scrollbar-thumb:active {
     background: var(--color-highlight);
 }
 
-
 .dark-bg-pattern-1 {
     background-color: var(--color-dark);
     background-image:  radial-gradient(var(--color-bg-pattern) 0.45px, transparent 0.45px), radial-gradient(var(--color-bg-pattern) 0.45px, var(--color-dark) 0.45px);
@@ -72,7 +71,7 @@ html::-webkit-scrollbar-thumb:active {
     background-color: var(--color-dark);
 }
 
-img {
+img,.icon {
     object-fit: cover;
     max-height: 100%;
     max-width: 100%;
@@ -472,7 +471,7 @@ section.team {
 }
 
 .team-members {
-    height:30vh;
+    height:25vh;
     padding: 1vh;
     width: 90%;
     display: flex;
@@ -548,7 +547,8 @@ section.newsletter {
     height: 80%;
     display: flex;
     gap: 1vw;
-    background-color: var(--color-highlight) ;
+    background-color: var(--color-highlight);
+    border: 3px solid var(--color-bg-pattern);
     border-radius: 10px;
     padding: 1vw;
 }
@@ -569,7 +569,7 @@ section.newsletter {
 }
 
 .newsletter .right {
-    width: 20%;
+    width: 25%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -577,20 +577,26 @@ section.newsletter {
 }
 
 .newsletter-btn {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
     padding: .8vw 2vw;
-    color: var(--color-light-text);
-    background-color: var(--color-bg-pattern);
     border: none;
+    border: 2px solid var(--color-dark);
     border-radius: 10px;
     font-size: calc(16px * var(--font-size-factor));
     font-weight: bold;
-    transition: 300ms;
+    transition: 250ms;
     cursor: pointer;
 }
 
 .newsletter-btn:hover{
-    background-color: var(--color-medium);
-    color: var(--color-dark);
+    text-decoration:underline;
+}
+
+.newsletter-btn .icon-container {
+    width: 25%;
+    aspect-ratio: 1/1;
 }
 
 
