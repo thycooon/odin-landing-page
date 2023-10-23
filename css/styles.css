@@ -144,9 +144,6 @@ header .menu {
     background-color: var(--color-bg-pattern);
 }
 
-
-
-
 main {
     flex:1;
 }
@@ -283,6 +280,130 @@ section.services {
 .service .description .name {
     font-size: calc(18px * 1.2 * var(--font-size-factor));
     font-weight: bold;
+}
+
+section.infos {
+    background-color: var(--color-dark);
+    color: var(--color-light-text);
+    align-items: center;
+    display: flex;
+}
+
+.infos > .container {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 70%;
+   height: 100%;
+   gap: 4vw;
+
+}
+
+.infos .step-container {
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+}
+
+.step{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-bg-pattern);
+    font-size: calc(30px * var(--font-size-factor));
+    font-weight: bold;
+}
+
+.step-container:not(:first-child){
+    margin-left: 2vw;
+}
+
+.step-container:not(:first-child) > .step{
+    height: 100%;
+    aspect-ratio: 1;
+    flex-grow: 1;
+    border: 5px solid var(--color-bg-pattern);
+    border-radius: 50%;
+    font-size: calc(40px * var(--font-size-factor));
+}
+
+.step-text{
+    font-size: calc(18px * var(--font-size-factor));
+    line-height: calc(18px * 2 * var(--font-size-factor));
+    width: 90%;
+}
+
+section.team {
+    color: var(--color-light-text);
+    justify-content: center;
+    align-items: center;
+}
+
+.team-members {
+    height:25vh;
+    padding: 1vh;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.team-member {
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.team-member .image {
+    height: 75%;
+    
+}
+
+.team-member > .image > img{
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+    border: 5px solid var(--color-highlight);
+    border-radius:10px;
+}
+
+.team-member .infos {
+    display: flex;
+    flex-direction: column;
+    height: 20%;
+    font-size: calc(18px * var(--font-size-factor))
+}
+
+.team-member .name,
+.team-member .position {
+    height: 50%;
+}
+
+section.awards {
+    color: var(--color-light-text);
+    justify-content: center;
+    align-items: center;
+}
+
+.awards-container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 3vw;
+    width: 90%;
+    height: 12vh;
+}
+
+.award {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.award svg {
+    fill: var(--color-highlight)
 }
 
 section.customer-reviews {
@@ -444,95 +565,6 @@ section.customer-reviews:not(:hover) .slider{
 section.customer-reviews:hover .slider {
     animation: moveup 100ms ease-in forwards;
    
-}
-
-section.infos {
-    background-color: var(--color-dark);
-    color: var(--color-light-text);
-    align-items: center;
-    display: flex;
-}
-
-.infos > .container {
-   display: flex;
-   width: 90%;
-   height: 100%;
-   justify-content: center;
-   align-items: center;
-   gap: 4vw;
-
-}
-
-section.team {
-    color: var(--color-light-text);
-    justify-content: center;
-    align-items: center;
-}
-
-.team-members {
-    height:25vh;
-    padding: 1vh;
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.team-member {
-    height:100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.team-member .image {
-    height: 75%;
-    
-}
-
-.team-member > .image > img{
-    width: 100%;
-    height: 100%; 
-    object-fit: cover;
-    border: 5px solid var(--color-highlight);
-    border-radius:10px;
-}
-
-.team-member .infos {
-    display: flex;
-    flex-direction: column;
-    height: 20%;
-    font-size: calc(18px * var(--font-size-factor))
-}
-
-.team-member .name,
-.team-member .position {
-    height: 50%;
-}
-
-section.awards {
-    color: var(--color-light-text);
-    justify-content: center;
-    align-items: center;
-}
-
-.awards-container {
-    display: flex;
-    justify-content: space-evenly;
-    gap: 3vw;
-    width: 90%;
-    height: 12vh;
-}
-
-.award {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.award svg {
-    fill: var(--color-highlight)
 }
 
 section.newsletter {
