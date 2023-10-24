@@ -256,9 +256,12 @@ section.services {
 }
 
 .service-container::-webkit-scrollbar {
-    width: 10px;
+    width: 30px;
     background: transparent;
+    border-left: 1vw solid var(--color-bg-pattern);
+    border-right: 1vw solid var(--color-bg-pattern);
 }
+
 .service-container::-webkit-scrollbar-thumb {
     background: var(--color-bg-pattern);
     border-radius: 5px;
@@ -282,6 +285,7 @@ section.services {
 
 .service .image{
     width: 100%;
+    user-select: none;
 }
 
 .service .image img {
@@ -319,6 +323,7 @@ section.services {
     border-radius: 10px;
     cursor: pointer;
     font-weight: bold;
+    user-select: none;
 }
 
 .service .description button:hover{
