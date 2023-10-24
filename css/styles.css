@@ -210,7 +210,6 @@ section.showcase {
     color: var(--color-light-text);
     font-family: Caveat, sans-serif;
     font-size: calc(48px * 1.2 * var(--font-size-factor));
-
 }
 
 .hero-second {
@@ -681,6 +680,7 @@ section.newsletter {
     border-radius: 10px;
     padding: 1vw;
 }
+
 .newsletter .left {
     width: 80%;
     display: flex;
@@ -734,7 +734,6 @@ section.newsletter {
     aspect-ratio: 1/1;
 }
 
-
 footer {
     width: 100%;
     background: var(--color-dark);
@@ -784,6 +783,7 @@ footer .footer-content {
 .link-container a:active {
     color: var(--color-light-text);
 }
+
 .link-container a:hover {
     text-decoration: underline;
 }
