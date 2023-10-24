@@ -239,48 +239,90 @@ section.showcase {
 }
 
 section.services {
+    height: 75vh;
     background-color: var(--color-light-bg);
     justify-content: center;
     align-items: center;
-    padding: 10vh 0;
+    padding: 5vh 0;
 }
 
 .service-container {
     width: 90%;
     height: 100%;
     display: flex;
-    justify-content: space-around;
     gap: 4vw;
+    padding: 2vw;
+    overflow-x: auto;
+}
+
+.service-container::-webkit-scrollbar {
+    width: 10px;
+    background: transparent;
+}
+.service-container::-webkit-scrollbar-thumb {
+    background: var(--color-bg-pattern);
+    border-radius: 5px;
+}
+.service-container::-webkit-scrollbar-thumb:active {
+    background: var(--color-highlight);
 }
 
 .service {
-    width: 100%;
+    width: 25%;
     height: 100%;
-    background-color: var(--color-medium);
+    padding: .5vw;
+    flex-shrink: 0;
+    background-color: var(--color-dark);
+    border: 8px solid var(--color-bg-pattern);
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
 }
 
 .service .image{
-    height: 100%;
-    width: 100%;                             
+    width: 100%;
 }
 
 .service .image img {
+    aspect-ratio: 16/12;
     border: 5px solid var(--color-light-text);
     border-radius: 10px;
 }
 
 .service .description {
-    height: 50%;
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 1vw;
+    gap: 2vh;
+    padding: 0vw 1vw;
+    color: var(--color-light-text);
+    background-color: transparent;
 }
 
 .service .description .name {
     font-size: calc(18px * 1.2 * var(--font-size-factor));
     font-weight: bold;
+}
+
+.service .description .text {
+    font-size: calc(16px * var(--font-size-factor));
+    line-height: calc(16px * 2 * var(--font-size-factor));
+}
+
+.service .description button {
+    width: 50%;
+    padding: .6vw .4vw;
+    font-size: calc(16px * var(--font-size-factor));
+    align-self: center;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.service .description button:hover{
+    text-decoration: underline;
 }
 
 section.infos {
@@ -298,7 +340,6 @@ section.infos {
    width: 70%;
    height: 100%;
    gap: 2vw;
-
 }
 
 .infos .step-container {
