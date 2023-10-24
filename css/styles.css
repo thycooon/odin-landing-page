@@ -471,7 +471,7 @@ section.club {
 .club .container .right {
     height: 80%;
     aspect-ratio: 1;
-    border: 8px solid var(--color-bg-pattern);
+    border: 5px solid var(--color-bg-pattern);
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -489,7 +489,7 @@ section.club {
     justify-content: center;
     align-items: center;
     fill: var(--color-highlight);
-    border: 8px solid var(--color-bg-pattern);
+    border: 5px solid var(--color-medium);
     border-radius: 50%;
 }
 
@@ -500,7 +500,7 @@ section.club {
     position: absolute;
     z-index: 1;
     font-size: calc(8px * var(--font-size-factor));
-    fill: var(--color-light-text);
+    fill: var(--color-highlight);
     
 }
 
