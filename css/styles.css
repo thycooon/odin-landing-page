@@ -340,6 +340,90 @@ section.infos {
 
 section.club {
     width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 5vh;
+}
+
+.club .container{
+    height: 55vh;
+    width: 70%;
+    border: 5px solid var(--color-bg-pattern);
+    border-radius: 10px;
+    padding: 2vw;
+    display: flex;
+    gap: 2vw;
+}
+
+.club .container .left {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1vh;
+}
+
+.club .left > .title {
+    color: var(--color-light-text);
+    font-size: calc(20px * 2 * var(--font-size-factor));
+}
+
+.club .main-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    font-size: calc(18px * var(--font-size-factor));
+    color: var(--color-medium);
+    padding-left: 1vw;
+}
+
+.club ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 3vh;
+    padding-left: 1vw;
+}
+
+.club .main-container li {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+.club .main-container .list-icon {
+    width: 2%;
+    aspect-ratio: 1;
+}
+
+.club .list-icon > .icon {
+    fill: var(--color-highlight);
+}
+
+.club-btn {
+    width: 20%;
+    margin: 1vw 0 0 1vw;
+    padding: 1vw;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--color-highlight);
+    color: var(--color-dark);
+    font-size: var(80px * var(--font-size-factor)) !important;
+}
+
+.club-btn:hover {
+    background: var(--color-bg-pattern);
+    font-size: var(18px * var(--font-size-factor)) !important;
+}
+
+.club .container .right {
+    width: 40%;
+    border: 5px solid var(--color-light-text);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 section.team {
@@ -373,7 +457,7 @@ section.team {
     width: 100%;
     height: 100%; 
     object-fit: cover;
-    border: 5px solid var(--color-bg-pattern);
+    border: 3px solid var(--color-bg-pattern);
     border-radius:10px;
 }
 
