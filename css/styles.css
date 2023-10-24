@@ -162,12 +162,12 @@ section:not(:first-of-type){
 section > span.title {
     display: flex;
     align-items: center;
-    justify-content: left;
-    padding: .6vw;
+    justify-content: center;
+    padding: 3vh;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: calc(36px * var(--font-size-factor));
     font-weight: bold;
-    color: var(--color-bg-pattern);
+    color: var(--color-highlight);
 }
 
 section.showcase {
@@ -338,6 +338,10 @@ section.infos {
     width:100%;
 }
 
+section.club {
+    width: 100%;
+}
+
 section.team {
     color: var(--color-light-text);
     justify-content: center;
@@ -345,7 +349,7 @@ section.team {
 }
 
 .team-members {
-    height:25vh;
+    height:30vh;
     padding: 1vh;
     width: 90%;
     display: flex;
@@ -369,7 +373,7 @@ section.team {
     width: 100%;
     height: 100%; 
     object-fit: cover;
-    border: 5px solid var(--color-highlight);
+    border: 5px solid var(--color-bg-pattern);
     border-radius:10px;
 }
 
@@ -377,7 +381,8 @@ section.team {
     display: flex;
     flex-direction: column;
     height: 20%;
-    font-size: calc(18px * var(--font-size-factor))
+    font-size: calc(18px * var(--font-size-factor));
+    gap: 1vh;
 }
 
 .team-member .name,
