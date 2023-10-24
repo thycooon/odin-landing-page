@@ -19,8 +19,8 @@ Showcase
 - Photo by Arnauld Van Wambeke: https://www.pexels.com/photo/group-of-people-on-a-sailboat-9607418/
   
 
-Background
--Photo by Ryan Wilson: https://unsplash.com/photos/YdpDztAnW9w
+Background  
+- Photo by Ryan Wilson: https://unsplash.com/photos/YdpDztAnW9w
   
 
 Team
