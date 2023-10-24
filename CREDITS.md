@@ -9,6 +9,7 @@ https://www.veryicon.com/icons/application/font-awesome/star-112.html
 https://www.veryicon.com/icons/application/font-awesome/star-half-6.html
 https://www.iconpacks.net/free-icon/mail-142.html
 https://iconpacks.net/?utm_source=link-attribution&utm_content=3278
+https://simpleicons.org/
 
 Photos:
 
