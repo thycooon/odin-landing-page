@@ -851,11 +851,21 @@ footer .footer-content {
     font-size: calc(18px * var(--font-size-factor));
 }
 
-.link-container:not(:last-of-type) .content {
+.link-container .content {
     display: flex;
     flex-direction: column;
     gap: 3vh;
     line-height: calc(16px * var(--font-size-factor));
+}
+.link-container:not(:last-of-type) .content {
+    gap: 3vh;
+}
+.link-container:last-of-type .content{
+    gap: 1vh;
+}
+
+.link-container.socials .social-link:hover{
+    fill: var(--color-bg-pattern);
 }
 
 .link-container a {
