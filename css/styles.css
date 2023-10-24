@@ -402,19 +402,22 @@ section.club {
 }
 
 .club-btn {
-    width: 20%;
+    width: 25%;
     margin: 1vw 0 0 1vw;
-    padding: 1vw;
+    padding: .8vw;
     border: none;
     border-radius: 10px;
     background-color: var(--color-highlight);
     color: var(--color-dark);
-    font-size: var(80px * var(--font-size-factor)) !important;
+    font-size: calc(18px * var(--font-size-factor));
+    font-weight: bold;
+    transition: background-color, color 300ms;
+    cursor: pointer;
 }
 
-.club-btn:hover {
+.club-btn:hover{
     background: var(--color-bg-pattern);
-    font-size: var(18px * var(--font-size-factor)) !important;
+    color: var(--color-light-text)
 }
 
 .club .container .right {
