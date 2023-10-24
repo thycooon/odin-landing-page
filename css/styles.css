@@ -296,7 +296,7 @@ section.infos {
    align-items: center;
    width: 70%;
    height: 100%;
-   gap: 4vw;
+   gap: 2vw;
 
 }
 
@@ -330,8 +330,12 @@ section.infos {
 
 .step-text{
     font-size: calc(18px * var(--font-size-factor));
-    line-height: calc(18px * 2 * var(--font-size-factor));
+    line-height: calc(18px * 2.5 * var(--font-size-factor));
     width: 90%;
+}
+
+.step-container:first-of-type .step-text{
+    width:100%;
 }
 
 section.team {
