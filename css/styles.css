@@ -221,6 +221,7 @@ section.showcase {
 .hero-btn {
     height: 15%;
     width: 25%;
+    padding: .8vh 0;
     border: none;
     border-radius: 10px;
     color: var(--color-dark);
@@ -241,7 +242,7 @@ section.services {
     background-color: var(--color-light-bg);
     justify-content: center;
     align-items: center;
-    padding: 5vh 0;
+    padding: 10vh 0;
 }
 
 .service-container {
@@ -265,7 +266,6 @@ section.services {
 }
 
 .service .image img {
-
     border: 5px solid var(--color-light-text);
     border-radius: 10px;
 }
