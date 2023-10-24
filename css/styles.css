@@ -394,21 +394,23 @@ section.club {
 
 .club .container{
     height: 55vh;
-    width: 70%;
-    border: 5px solid var(--color-bg-pattern);
+    width: 60%;
+    border: 5px solid var(--color-highlight);
     border-radius: 10px;
     padding: 2vw;
     display: flex;
-    gap: 2vw;
+    align-items: center;
+    justify-content: center;
+    gap: 0vw;
 }
 
 .club .container .left {
-    width: 60%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 1vh;
+    gap: .5vh;
+    padding-left: 1vw;
 }
 
 .club .left > .title {
@@ -419,10 +421,9 @@ section.club {
 .club .main-container{
     display: flex;
     flex-direction: column;
-    gap: 2vh;
+    gap: 2.5vh;
     font-size: calc(18px * var(--font-size-factor));
-    color: var(--color-medium);
-    padding-left: 1vw;
+    color: var(--color-medium);  
 }
 
 .club ul {
@@ -449,7 +450,7 @@ section.club {
 }
 
 .club-btn {
-    width: 25%;
+    width: 50%;
     margin: 1vw 0 0 1vw;
     padding: .8vw;
     border: none;
@@ -468,12 +469,47 @@ section.club {
 }
 
 .club .container .right {
-    width: 40%;
-    border: 5px solid var(--color-light-text);
-    border-radius: 10px;
+    height: 80%;
+    aspect-ratio: 1;
+    border: 8px solid var(--color-bg-pattern);
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    background-color: var(--color-dark);
+}
+
+.club .container .right .icon-container:first-of-type{
+    height: 65%;
+    aspect-ratio: 1;
+    padding: 2vh;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: var(--color-highlight);
+    border: 8px solid var(--color-bg-pattern);
+    border-radius: 50%;
+}
+
+.club .right .logo-text,
+.club .right .logo-text-2{
+    height:95%;
+    aspect-ratio: 1;
+    position: absolute;
+    z-index: 1;
+    font-size: calc(8px * var(--font-size-factor));
+    fill: var(--color-light-text);
+    
+}
+
+.club .right .logo-text{
+    transform: rotate(-18.7deg);
+}
+
+.club .right .logo-text-2{
+    transform: rotate(-53deg);
 }
 
 section.team {
@@ -653,17 +689,17 @@ section.customer-reviews {
     }
  }
  
- @keyframes movedown {
-     0% {
-         transform: translateY(-1vh);
-        } 
-        50% {
-         transform: translateY(2vh);
-        }
-        100% {
-         transform: translateY(6vh);
-        }
- }
+@keyframes movedown {
+    0% {
+        transform: translateY(-1vh);
+    } 
+    50% {
+        transform: translateY(2vh);
+    }
+    100% {
+        transform: translateY(6vh);
+    }
+}
 
 input[name="review-slider"] {
     display: none;
