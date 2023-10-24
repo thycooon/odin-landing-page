@@ -818,15 +818,15 @@ section.newsletter {
 
 footer {
     width: 100%;
-    background: var(--color-dark);
-    color: var(--color-light-text);
-    font-size: calc(16px * var(--font-size-factor));
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-top: 4px solid var(--color-bg-pattern);
     padding: 3vh 0;
+    border-top: 4px solid var(--color-bg-pattern);
+    color: var(--color-light-text);
+    background: var(--color-dark);
+    font-size: calc(16px * var(--font-size-factor));
 }
 
 footer .footer-content {
@@ -837,6 +837,8 @@ footer .footer-content {
     border: 3px solid var(--color-bg-pattern);
     border-radius: 10px;
 }
+
+
 
 .link-container {
     display: flex;
@@ -849,17 +851,32 @@ footer .footer-content {
     font-size: calc(18px * var(--font-size-factor));
 }
 
-.link-container .content {
+.link-container:not(:last-of-type) .content {
     display: flex;
     flex-direction: column;
-    gap: 1vh;
+    gap: 3vh;
     line-height: calc(16px * var(--font-size-factor));
 }
 
 .link-container a {
-    text-decoration: none;
+    width: 10vw;
+    display: flex;
+    align-items: center;
+    gap: 1.5vw;
     color: var(--color-medium);
+    text-decoration: none;
     transition: 300ms;
+}
+
+.link-container .icon-container{
+    width: 15%;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+.link-container .icon {
+    height: 100%;
+    width: 100%;
 }
 
 .link-container a:active {
@@ -879,8 +896,9 @@ footer .footer-content {
 }
 
 .logo-copyright .logo {
-    width: 80%;
+    height: 80%;
 
+    aspect-ratio: 1;
 }
 
 .logo-copyright .logo svg {
